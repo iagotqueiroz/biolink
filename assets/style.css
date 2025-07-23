@@ -26,6 +26,7 @@
 
 body {
   background: var(--bgurl) no-repeat top center / cover;
+  height: 100vh;
 }
 
 body * {
@@ -39,7 +40,6 @@ body * {
   margin: 56px auto 0px;
   padding: 0px 24px;
 }
-
 
 /*Profile*/
 #profile {
@@ -104,7 +104,7 @@ ul {
   padding: 24px 0;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +127,6 @@ ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
-
 
 /* Social Links */
 #social-links {
@@ -156,4 +155,15 @@ footer {
   text-align: center;
   padding: 24px;
   font-size: 16px;
+}
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./bg-desktop-light.jpg);
+  }
 }
